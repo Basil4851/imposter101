@@ -3,8 +3,8 @@ import { createServer } from "http";
 import { WebSocketServer, WebSocket } from "ws";
 import { createServer as createViteServer } from "vite";
 import { nanoid } from "nanoid";
-import { Room, Player, ClientMessage, ServerMessage } from "./src/types";
-import { WORD_CATEGORIES } from "./src/constants";
+import { Room, Player, ClientMessage, ServerMessage } from "./src/types.js";
+import { WORD_CATEGORIES } from "./src/constants.js";
 
 const app = express();
 const server = createServer(app);
